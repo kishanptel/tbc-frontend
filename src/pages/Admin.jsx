@@ -18,7 +18,7 @@ export default function Admin({ currentUser, showToast }) {
   const [userToDelete, setUserToDelete] = useState(null);
   const [isDeletingUser, setIsDeletingUser] = useState(false);
 
-  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+  const API_URL = import.meta.env.VITE_API_URL || 'https://theblissco-backend.vercel.app';
 
   useEffect(() => {
     if (!currentUser || !currentUser.isAdmin) {

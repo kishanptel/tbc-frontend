@@ -52,7 +52,7 @@ export default function Register({ showToast, setCurrentUser }) {
           formData.append('file', values.profilePic);
         }
 
-        const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+        const API_URL = import.meta.env.VITE_API_URL || 'https://theblissco-backend.vercel.app';
         const response = await fetch(`${API_URL}/users/register`, {
           method: 'POST',
           body: formData,

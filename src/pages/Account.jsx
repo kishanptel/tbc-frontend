@@ -43,7 +43,7 @@ export default function Account({ showToast, setCurrentUser }) {
   const [selectedFileName, setSelectedFileName] = useState('');
   const [isRegistering, setIsRegistering] = useState(false);
 
-  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+  const API_URL = import.meta.env.VITE_API_URL || 'https://theblissco-backend.vercel.app';
 
   // 1. Formik Login Form
   const loginFormik = useFormik({
