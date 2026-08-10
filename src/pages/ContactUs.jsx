@@ -100,6 +100,21 @@ export default function ContactUs({ showToast }) {
                   </div>
                 </div>
 
+                <div className="contact-method-card" style={{ background: '#e8f5e9', border: '1px solid #c8e6c9' }}>
+                  <div>
+                    <div className="contact-method-label" style={{ color: '#2e7d32', fontWeight: 800 }}>Instant WhatsApp Chat</div>
+                    <a 
+                      href="https://wa.me/919876543210?text=Hello%20theblissco!%20I%20would%20like%20to%20inquire%20about%20a%20custom%20flower%20bouquet." 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="contact-method-value" 
+                      style={{ color: '#1b5e20', fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: '6px', marginTop: '2px' }}
+                    >
+                      Chat on WhatsApp (+91 98765 43210) ➔
+                    </a>
+                  </div>
+                </div>
+
                 <div className="contact-method-card">
                   <div>
                     <div className="contact-method-label">Delivery Care</div>

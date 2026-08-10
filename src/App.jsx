@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import GlobalLoader from './components/GlobalLoader';
 import Toast from './components/Toast';
 import RouteTracker from './components/RouteTracker';
+import WhatsAppWidget from './components/WhatsAppWidget';
 
 // Pages
 import Home from './pages/Home';
@@ -179,6 +180,9 @@ function App() {
           <Route path="/account" element={<Account showToast={showToast} setCurrentUser={setCurrentUser} />} />
         </Routes>
       </div>
+
+      {/* Floating WhatsApp Chat Widget */}
+      <WhatsAppWidget />
 
       {/* Footer */}
       <Footer />
