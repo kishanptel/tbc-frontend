@@ -103,11 +103,11 @@ export default function ContactUs({ showToast }) {
                 <div className="contact-method-card" style={{ background: '#e8f5e9', border: '1px solid #c8e6c9' }}>
                   <div>
                     <div className="contact-method-label" style={{ color: '#2e7d32', fontWeight: 800 }}>Instant WhatsApp Chat</div>
-                    <a 
-                      href="https://wa.me/919876543210?text=Hello%20theblissco!%20I%20would%20like%20to%20inquire%20about%20a%20custom%20flower%20bouquet." 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="contact-method-value" 
+                    <a
+                      href="https://wa.me/919265962281?text=Hello%20theblissco!%20I%20would%20like%20to%20inquire%20about%20a%20custom%20flower%20bouquet."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="contact-method-value"
                       style={{ color: '#1b5e20', fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: '6px', marginTop: '2px' }}
                     >
                       Chat on WhatsApp (+91 98765 43210) ➔
@@ -135,12 +135,12 @@ export default function ContactUs({ showToast }) {
               <form onSubmit={formik.handleSubmit} className="enquiry-form" noValidate>
                 <div className="form-group">
                   <label htmlFor="name" className="form-label">Full Name *</label>
-                  <input 
-                    type="text" 
-                    id="name" 
+                  <input
+                    type="text"
+                    id="name"
                     name="name"
-                    placeholder="Enter your name" 
-                    className={`form-input ${formik.touched.name && formik.errors.name ? 'input-error' : ''}`} 
+                    placeholder="Enter your name"
+                    className={`form-input ${formik.touched.name && formik.errors.name ? 'input-error' : ''}`}
                     value={formik.values.name}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
@@ -152,11 +152,11 @@ export default function ContactUs({ showToast }) {
 
                 <div className="form-group">
                   <label htmlFor="email" className="form-label">Email Address *</label>
-                  <input 
-                    type="email" 
-                    id="email" 
+                  <input
+                    type="email"
+                    id="email"
                     name="email"
-                    placeholder="Enter your email" 
+                    placeholder="Enter your email"
                     className={`form-input ${formik.touched.email && formik.errors.email ? 'input-error' : ''}`}
                     value={formik.values.email}
                     onChange={formik.handleChange}
@@ -169,11 +169,11 @@ export default function ContactUs({ showToast }) {
 
                 <div className="form-group">
                   <label htmlFor="subject" className="form-label">Subject</label>
-                  <input 
-                    type="text" 
-                    id="subject" 
+                  <input
+                    type="text"
+                    id="subject"
                     name="subject"
-                    placeholder="Subject of inquiry" 
+                    placeholder="Subject of inquiry"
                     className={`form-input ${formik.touched.subject && formik.errors.subject ? 'input-error' : ''}`}
                     value={formik.values.subject}
                     onChange={formik.handleChange}
@@ -186,10 +186,10 @@ export default function ContactUs({ showToast }) {
 
                 <div className="form-group">
                   <label htmlFor="message" className="form-label">Message *</label>
-                  <textarea 
-                    id="message" 
+                  <textarea
+                    id="message"
                     name="message"
-                    placeholder="Describe your inquiry or order details..." 
+                    placeholder="Describe your inquiry or order details..."
                     className={`form-input form-textarea ${formik.touched.message && formik.errors.message ? 'input-error' : ''}`}
                     value={formik.values.message}
                     onChange={formik.handleChange}

@@ -116,6 +116,7 @@ function App() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
+          userId: currentUser.id || currentUser._id || null,
           userEmail: currentUser.email,
           userName: currentUser.name,
           items: cartItems.map(item => ({
