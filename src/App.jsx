@@ -110,7 +110,7 @@ function App() {
     const subtotal = cartItems.reduce((sum, item) => sum + item.price * item.qty, 0);
 
     try {
-      const API_URL = import.meta.env.VITE_API_URL || 'https://theblissco-backend.vercel.app';
+      const API_URL = import.meta.env.VITE_API_URL || 'https://tbc-backend-nine.vercel.app';
       const response = await fetch(`${API_URL}/orders/create`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

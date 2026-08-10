@@ -26,7 +26,7 @@ export default function Login({ showToast, setCurrentUser }) {
     onSubmit: async (values) => {
       setIsSubmitting(true);
       try {
-        const API_URL = import.meta.env.VITE_API_URL || 'https://theblissco-backend.vercel.app';
+        const API_URL = import.meta.env.VITE_API_URL || 'https://tbc-backend-nine.vercel.app';
         const response = await fetch(`${API_URL}/users/login`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },

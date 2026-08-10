@@ -17,7 +17,7 @@ export default function Orders({ currentUser, showToast }) {
     const fetchOrders = async () => {
       setLoading(true);
       try {
-        const API_URL = import.meta.env.VITE_API_URL || 'https://theblissco-backend.vercel.app';
+        const API_URL = import.meta.env.VITE_API_URL || 'https://tbc-backend-nine.vercel.app';
         const response = await fetch(`${API_URL}/orders/user?email=${encodeURIComponent(currentUser.email)}`);
         const data = await response.json();
         if (response.ok && data.success) {

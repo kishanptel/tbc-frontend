@@ -34,7 +34,7 @@ export default function Profile({ currentUser, handleLogout, showToast }) {
     const fetchUserOrders = async () => {
       setOrdersLoading(true);
       try {
-        const API_URL = import.meta.env.VITE_API_URL || 'https://theblissco-backend.vercel.app';
+        const API_URL = import.meta.env.VITE_API_URL || 'https://tbc-backend-nine.vercel.app';
         const res = await fetch(`${API_URL}/orders/user?email=${encodeURIComponent(currentUser.email)}`);
         const data = await res.json();
         if (res.ok && data.success) {
@@ -63,7 +63,7 @@ export default function Profile({ currentUser, handleLogout, showToast }) {
     onSubmit: async (values, { resetForm }) => {
       setIsChangingPassword(true);
       try {
-        const API_URL = import.meta.env.VITE_API_URL || 'https://theblissco-backend.vercel.app';
+        const API_URL = import.meta.env.VITE_API_URL || 'https://tbc-backend-nine.vercel.app';
         const response = await fetch(`${API_URL}/users/change-password`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -97,9 +97,9 @@ export default function Profile({ currentUser, handleLogout, showToast }) {
       const getApiUrl = () => {
         if (import.meta.env.VITE_API_URL) return import.meta.env.VITE_API_URL;
         if (typeof window !== 'undefined' && window.location.hostname.includes('vercel.app')) {
-          return 'https://theblissco-backend.vercel.app';
+          return 'https://tbc-backend-nine.vercel.app';
         }
-        return 'https://theblissco-backend.vercel.app';
+        return 'https://tbc-backend-nine.vercel.app';
       };
 
       const API_URL = getApiUrl();
