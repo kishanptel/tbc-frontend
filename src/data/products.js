@@ -189,21 +189,6 @@ export const signatureProducts = [
     note: 'Bag is not included',
     img: '/images/Keychain/Purple Flower Keychain.jpg',
     images: [
-      '/images/Keychain/Purple Flower Keychain.jpg',
-      '/images/Keychain/Sunflower keychain.jpg'
-    ]
-  },
-  {
-    id: 24,
-    category: 'Keychain',
-    name: 'Sunflower Keychain Set (Set of 3)',
-    price: 499,
-    tag: 'Set of 3',
-    desc: 'Handcrafted golden sunflower floral keychains set of 3 bright blooms.',
-    note: 'Bag / Keys not included',
-    img: '/images/Keychain/Sunflower keychain.jpg',
-    images: [
-      '/images/Keychain/Sunflower keychain.jpg',
       '/images/Keychain/Purple Flower Keychain.jpg'
     ]
   },
