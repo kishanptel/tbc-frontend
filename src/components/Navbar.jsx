@@ -9,7 +9,12 @@ export default function Navbar({ totalCartCount = 0, currentUser, handleLogout }
     <nav className="nav">
       <div className="container nav-container">
         <Link to="/" className="nav-logo">
-          <img src="/logo.png" alt="theblissco logo" className="nav-logo-img" />
+          <img 
+            src="/logo.png" 
+            alt="theblissco logo" 
+            className="nav-logo-img" 
+            onError={(e) => { e.target.onerror = null; e.target.src = "https://res.cloudinary.com/llzw1dmz/image/upload/v1786053620/theblissco_assets/theblissco_official_logo.jpg"; }}
+          />
           <div className="nav-logo-text">
             <span className="nav-logo-brand">theblissco</span>
             <span className="nav-logo-sub">FLOWER SHOP</span>
