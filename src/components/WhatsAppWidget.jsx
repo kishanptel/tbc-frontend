@@ -12,35 +12,35 @@ export default function WhatsAppWidget({ phone = "919265962281", defaultMessage 
       className="whatsapp-float-btn"
       style={{
         position: 'fixed',
-        bottom: '24px',
-        right: '24px',
-        width: '58px',
-        height: '58px',
+        bottom: '20px',
+        right: '20px',
+        width: '48px',
+        height: '48px',
         borderRadius: '50%',
         background: 'linear-gradient(135deg, #25D366 0%, #128C7E 100%)',
         color: '#ffffff',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        boxShadow: '0 8px 24px rgba(37, 211, 102, 0.45)',
+        boxShadow: '0 6px 18px rgba(37, 211, 102, 0.4)',
         zIndex: 9990,
         transition: 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)',
         cursor: 'pointer',
         textDecoration: 'none',
-        border: '2px solid rgba(255, 255, 255, 0.3)'
+        border: '1.5px solid rgba(255, 255, 255, 0.35)'
       }}
       onMouseEnter={(e) => {
-        e.currentTarget.style.transform = 'scale(1.12) translateY(-2px)';
-        e.currentTarget.style.boxShadow = '0 12px 28px rgba(37, 211, 102, 0.6)';
+        e.currentTarget.style.transform = 'scale(1.1) translateY(-2px)';
+        e.currentTarget.style.boxShadow = '0 10px 22px rgba(37, 211, 102, 0.55)';
       }}
       onMouseLeave={(e) => {
         e.currentTarget.style.transform = 'scale(1) translateY(0)';
-        e.currentTarget.style.boxShadow = '0 8px 24px rgba(37, 211, 102, 0.45)';
+        e.currentTarget.style.boxShadow = '0 6px 18px rgba(37, 211, 102, 0.4)';
       }}
     >
       <svg
-        width="34"
-        height="34"
+        width="27"
+        height="27"
         viewBox="0 0 32 32"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
